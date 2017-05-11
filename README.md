@@ -39,3 +39,23 @@ The final option allows the user to add new product to the inventory.  Prompts a
 ![manageraddproduct](https://cloud.githubusercontent.com/assets/22185509/25934522/64102146-35ec-11e7-99e6-593993dcf38a.JPG)
 
 
+### **Contributors**
+<hr>
+
+Thomas Kearney https://github.com/ThomasKear
+
+### **Technologies Used:**
+<hr>
+
+* Javascript
+* nodeJS
+* MySQL
+* npm packages:
+  * mysql
+  * inquirer
+  * cli-table
+  
+### **License**
+<hr>
+
+Copyright 2017 UNC Coding Bootcamp - Thomas Kearney

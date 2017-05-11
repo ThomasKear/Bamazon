@@ -75,29 +75,47 @@ var start = function() {
 
             var quanity = answer.quanity;
             var itemId = answer.id;
-            connection.query('SELECT * FROM products WHERE ?', [{ 
-            	id: itemId 
-            	}], function(err, selectedItem) {
-                
+            connection.query('SELECT * FROM products WHERE ?', [{
+                id: itemId
+            }], function(err, selectedItem) {
+
                 if (err) throw err;
                 if (selectedItem[0].stock_quanity - quanity >= 0) {
+
+                    var orderTotal = quanity * selectedItem[0].price;
                     
                     console.log('We have enough (' + selectedItem[0].product_name + ')!');
-                    console.log('Quantity in stock: ' + selectedItem[0].stock_quanity + 'Order quantity: ' + quanity);
-                    console.log('You will be charged $' + (answer.quanity * selectedItem[0].price) + '. Thank you!');
+                    console.log('Quantity in stock: ' + selectedItem[0].stock_quanity + ' Order quantity: ' + quanity);
+                    console.log('You will be charged $' + orderTotal + '. Thank you!');
 
                     connection.query('UPDATE products SET stock_quanity=? WHERE id=?', [selectedItem[0].stock_quanity - quanity, itemId],
                         function(err, inventory) {
                             if (err) throw err;
-                            start();
-                        });
+                            orderAgain();
+                        })
                 } else {
                     console.log('Insufficient quantity.  Please adjust your order, we only have ' + selectedItem[0].stock_quanity + ' ' + selectedItem[0].product_name + 'in stock.');
-                    start();
+                    orderAgain();
                 }
             });
         });
     });
+}
+
+var orderAgain = function() {
+    inquirer.prompt([{
+        name: 'orderAgain',
+        type: 'list',
+        message: 'Order again?',
+        choices: ['Yes', 'No']
+    }]).then(function(answer) {
+        if (answer.orderAgain === 'Yes') {
+            start();
+        } else {
+            console.log('Thank you, come again!');
+            process.exit();
+        }
+    })
 }
 
 start();

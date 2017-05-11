@@ -41,6 +41,7 @@ var start = function() {
             addProduct();
         } else if (answer.mngrOption === "I'm done, thanks") {
             console.log("Have a great rest of your day");
+            process.exit();
         }
     });
 };
@@ -178,9 +179,12 @@ var addProduct = function() {
 
     ]).then(function(answer) {
 
-        connection.query('INSERT INTO products (product_name, department_name, price, stock_quanity) VALUES (?,?,?,?)', [
-            answer.productToAdd, answer.deptToAdd, answer.priceToAdd, answer.stockToAdd
-        ], function(err, res) {
+        connection.query('INSERT INTO products SET ?', {
+            product_name: answer.productToAdd, 
+            department_name: answer.deptToAdd, 
+            price: answer.priceToAdd, 
+            stock_quanity: answer.stockToAdd
+        }, function(err, res) {
             if (err) throw err;
 
             console.log(answer.productToAdd + ' added successfully!');

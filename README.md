@@ -8,7 +8,7 @@ An interactive shopping node where MySQL and NodeJS are used to allow users to p
 **Bamazon Customer Interface**
 <hr>
 
-The Bamazon Customer Interface allows users to view the current items availale to purchase.  The user will be prompted to enter the ID # and how many items they wish to purchase.  If the item is in stock, the order will be completed and the user will see the total for their purchase. 
+The Bamazon Customer Interface allows users to view the current items available to purchase.  The user will be prompted to enter the ID # and how many items they wish to purchase.  If the item is in stock, the order will be completed and the user will see the total for their purchase. 
 
 ![customerpurchase](https://cloud.githubusercontent.com/assets/22185509/25932842/d95a4784-35e1-11e7-86f2-76a456285948.JPG)
 
@@ -16,13 +16,13 @@ The Bamazon Customer Interface allows users to view the current items availale t
 **Bamazon Manager Interface**
 <hr>
 
-The Bamazon Manager Interface alows users to view and edit the inventory of the store
+The Bamazon Manager Interface allows users to view and edit the inventory of the store
 
 ![managerprompt](https://cloud.githubusercontent.com/assets/22185509/25933418/9a5ef41e-35e4-11e7-8d25-a574f60af1a8.JPG)
 
 
 
-The first option allows the user to see the list of products that are currently for sale, what deparment the item belongs to, the price of the product and how much stock is left for that product.
+The first option allows the user to see the list of products that are currently for sale, what department the item belongs to, the price of the product and how much stock is left for that product.
 
 ![managerview](https://cloud.githubusercontent.com/assets/22185509/25933459/e7ba901a-35e4-11e7-8e33-d4ff1082ccb0.JPG)
 

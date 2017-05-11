@@ -28,8 +28,8 @@ The second option allows the user to see a list of all inventory items that have
 
 The third option allows the user to update the inventory for a specific product. A prompt asks what the id is for the product the user wants to update.  A second prompt asks how many items they wish to add.
 
-![manageraddproduct](https://cloud.githubusercontent.com/assets/22185509/25934522/64102146-35ec-11e7-99e6-593993dcf38a.JPG)
+![manageraddinvent](https://cloud.githubusercontent.com/assets/22185509/25934536/7b69900c-35ec-11e7-8f35-d0671edc4693.JPG)
 
 The final option allows the user to add new product to the inventory.  Prompts ask the user for the product name, department, price, and quantity.
 
-![manageraddinvent](https://cloud.githubusercontent.com/assets/22185509/25934536/7b69900c-35ec-11e7-8f35-d0671edc4693.JPG)
+![manageraddproduct](https://cloud.githubusercontent.com/assets/22185509/25934522/64102146-35ec-11e7-99e6-593993dcf38a.JPG)

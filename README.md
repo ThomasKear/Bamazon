@@ -32,3 +32,4 @@ The third option allows the user to update the inventory for a specific product.
 
 The final option allows the user to add new product to the inventory.  Prompts ask the user for the product name, department, price, and quantity.
 
+![manageraddinvent](https://cloud.githubusercontent.com/assets/22185509/25934536/7b69900c-35ec-11e7-8f35-d0671edc4693.JPG)

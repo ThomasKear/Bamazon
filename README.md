@@ -9,3 +9,5 @@ https://cloud.githubusercontent.com/assets/22185509/25932842/d95a4784-35e1-11e7-
 If there isn't enough product to satisfy the order, it will tell them there is "insufficient quantity" ask they adjust their order and lets them know how much is in stock.
 
 https://cloud.githubusercontent.com/assets/22185509/25933045/f6998228-35e2-11e7-9f5b-6edf593cffad.JPG
+
+![managerprompt](https://cloud.githubusercontent.com/assets/22185509/25933418/9a5ef41e-35e4-11e7-8d25-a574f60af1a8.JPG)

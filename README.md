@@ -14,6 +14,7 @@ The Bamazon Customer Interface allows users to view the current items availale t
 
 
 **Bamazon Manager Interface**
+<hr>
 
 The Bamazon Manager Interface alows users to view and edit the inventory of the store
 
@@ -36,3 +37,5 @@ The third option allows the user to update the inventory for a specific product.
 The final option allows the user to add new product to the inventory.  Prompts ask the user for the product name, department, price, and quantity.
 
 ![manageraddproduct](https://cloud.githubusercontent.com/assets/22185509/25934522/64102146-35ec-11e7-99e6-593993dcf38a.JPG)
+
+
